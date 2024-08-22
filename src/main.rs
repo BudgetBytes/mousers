@@ -21,9 +21,8 @@ fn main() {
     
     loop {
         let rng_pos = get_random_value(width, height);
-        println!("{} - {}", rng_pos.x, rng_pos.y);
         mouse.move_to(rng_pos.x, rng_pos.y).expect("[ERROR] Unable to move mouse");
-        thread::sleep(Duration::from_secs(5));
+        thread::sleep(Duration::from_secs(10));
     }
 }
 
